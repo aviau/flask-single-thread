@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flask-single-thread</title>
+    </head>
+    <body>
+        <p>
+            Cette page prend 10 secondes à générer. Si vous tentez de la charger dans plusieurs tabs de votre navigateur en même temps, vous verrez que Flask répond à une seule requête à la fois.
+        </p>
+        <p>La fin de la génération de la première page que vous chargez devrait correspondre avec le début de la génération de la deuxième.</p>
+        <p>La génération de cette page a débuté à {{ time_start }}.</p>
+        <p>La génération de cette page s'est terminé à {{ time_end }}</p>
+    </body>
+</html>
